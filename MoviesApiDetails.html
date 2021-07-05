@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Movie Details</title>
+</head>
+
+<body>
+
+    <div class="container p-5">
+
+        <div id="movieDetails" class="row bg-dark jumbotron p-5"></div>
+
+        <div class="row">
+            <div class="col-4">
+                <a href="MoviesApiMain.html"><button type="button" class="btn btn-primary">Back To Home</button></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+
+        var movieDetails = JSON.parse(localStorage.movieDetails);
+
+        console.log(movieDetails);
+        printMovieDetails();
+
+
+        function printMovieDetails() {
+            var str = `
+            <div class="col-12 text-center text-light mb-3"><h1>${movieDetails['Title']}</h1></div>
+            
+            <div class="col-4">
+                <img src="${movieDetails['Poster']}" class="img-fluid" alt="Responsive image">
+            </div>
+            
+            <div class="col-8 text-light pt-5 pl-4">
+                <p>Title: ${movieDetails['Type']}</p>
+                <p>Genre: ${movieDetails['Genre']}</p>
+                <p>Released: ${movieDetails['Released']}</p>
+                <p>Runtime: ${movieDetails['Runtime']}</p>
+                <p>Language: ${movieDetails['Language']}</p>
+                <p>Writer: ${movieDetails['Writer']}</p>
+                <p>Rating: ${movieDetails['Ratings'][0]['Value']}</p>
+            </div>`;
+
+            document.getElementById("movieDetails").innerHTML = str;
+        }
+
+
+    </script>
+
+</body>
+
+</html>

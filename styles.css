@@ -1,0 +1,22 @@
+#title{
+
+   background-image: url(images/movie.jpg) ; 
+   background-position: center;
+   background-size: cover; 
+   background-repeat: no-repeat; 
+   color: white;
+   height: 200px;
+   text-align: center;
+   padding-top: 40px;
+}
+
+
+
+#cardsArea{
+
+
+   background-image: url(images/popcorn.jpg);
+   background-position: center;
+   background-size: cover; 
+   background-repeat: no-repeat; 
+}
