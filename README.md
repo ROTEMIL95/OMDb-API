@@ -6,4 +6,17 @@ Web for moives rest api from OMDb APi
 3) At the bottom of the page you can go to the following pages via the buttons.
 
 
-Enjoy !  . 
+Enjoy ! 
+
+
+
+![Screenshot (7)](https://user-images.githubusercontent.com/56782793/124479773-444f6000-ddaf-11eb-8cf8-fb2b68652774.png)
+
+<br>
+
+![Screenshot (8)](https://user-images.githubusercontent.com/56782793/124479981-79f44900-ddaf-11eb-95c0-fef908285b35.png)
+
+
+
+
+
